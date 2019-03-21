@@ -16,27 +16,18 @@ namespace GitTest
 			//do something
 		}
 
-        private static void MergeFail()
-        {
-            throw new NotImplementedException();
-        }
-
-        static void Main(string[] args)
+		static void Main(string[] args)
 		{
 			//add New Method
 			NewMethod();
 			//remove mergeFail() call at start
-			ConflictResolve();
 			Console.WriteLine("Git Test!");
 
-			ConflictResolve();
+			MergeFail();
 		}
 
-		private static void ConflictResolve()
+		private static void MergeFail()
 		{
-			Console.WriteLine("Program::ConflictResolve() be called");
-
-			Console.WriteLine("Testing"); 
 			Console.WriteLine("Program::MergeFail() be called" + "in master branch");
 		}
 	}
